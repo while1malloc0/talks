@@ -218,3 +218,102 @@ TODO: Flesh this out a bit. Really we want to communicate about the attitudes an
 # Reviewing in passes
 
 ---
+
+# Passes
+
+Each pass is a theme, and some questions to help focus on that theme
+
+---
+
+# Passes to complete every time
+
+If there are red flags on any of these, resolve before adding more commentary.
+
+---
+
+# Sizing up
+
+* What is the general shape of the PR? Is it a completely new feature? Is it a refactor? Is it a one-line change?
+
+* Is the PR the right size? <!--- don't be nitpicky about this -->
+
+---
+
+# Context
+
+* What is this PR trying to accomplish?
+* Why is this PR trying to accomplish that?
+* Does this PR actually accomplish what it says it will?
+<!---
+Hopefully most of this is provided by PR comments
+-->
+
+---
+
+# Relevance
+
+* Is the change made in this PR necessary?
+* Does this PR duplicate existing functionality?
+* Are there others that should be aware of this PR?
+
+---
+
+# Passes for more in-depth review
+
+Do these for more substantial PRs. Pick the ones relevant to the change.
+
+---
+
+# Readability
+
+* Is the change reasonably understandable by other humans with little/no prior experience of the code?
+
+<!---
+TODO: Add example slide
+Trick: Read the code out loud. If you find yourself saying "why?" maybe something isn't readable
+-->
+
+---
+
+# Production readiness
+
+* How do we know when this breaks?
+* Is there new documentation required by this change?
+* Are there tests that prevent regression?
+* Is this change secure?
+
+---
+
+# Naming
+
+* Are variable, function, method names communicative of what they do?
+* Are the names of things idiomatic to the language? <!--- most linters should catch this -->
+* Do names encapsulate the problem domain? <!--- name after what it does, not what it is -->
+
+<!---
+TODO: Break those points out into individual slides with examples
+-->
+
+---
+
+# Gotchas
+
+* What are the ways in which the added or changed code can break?
+* Common gotchas: transposition errors, off by one errors, memory leaks, null dereferences
+* Is spelling correct and consistent?
+
+---
+
+# Language specific
+
+* Is the code idiomatic?
+* Are new patterns introduced?
+* Does the code fall into common pitfalls for the language?
+
+---
+
+# Recap
+
+* Organizations: be intentional about your code review culture
+* Authors: make your reviewers lives' easier
+* Reviewers: be thorough and engage with the pedagogical aspects of code review
