@@ -7,14 +7,6 @@
 
 ---
 
-# Code Review is good
-
-<!---
-- But saying that something is good isn't very helpful. Instead, it's better to say whether or not it's useful
--->
-
----
-
 # Code Review is useful
 
 ---
@@ -25,27 +17,25 @@
 * A place to pass on best practices of an organization
 * An easy way for developing engineers to provide technical leadership
 
-<!--- TODO: Figure out the transition here. Maybe something about how we maximize the benefits? -->
+<!---
+TODO: Break this up into a few slides
+TODO: Figure out the transition here. Maybe something about how we maximize the benefits? -->
 
 ---
 
-# A Code Review Culture is useful
+# A Code Review *Culture* is useful
 
 ---
 
 # Culture
 
-"the set of shared attitudes, values, goals, and practices that characterizes an institution or organization" - Miriam Webster (.com)
-
-<!---
-- Maybe add a note about how culture can be intentional or accidental?
--->
+"the set of shared **attitudes**, **values**, **goals**, and **practices** that characterizes an institution or organization" - Miriam Webster (.com)
 
 ---
 
 # Code Review Culture
 
-The set of shared attitudes, values, goals, and practices that characterize an engineering organization's approach to conducting code review.
+The set of shared **attitudes**, **values**, **goals**, and **practices** that characterize **an engineering organization's approach to conducting code review.**
 
 <!--- lead in: let's break that down a little bit -->
 
@@ -53,7 +43,7 @@ The set of shared attitudes, values, goals, and practices that characterize an e
 
 # Attitudes
 
-Consensus on how code review should be conducted.
+A shared way of thinking about code review, its importance, and how it should be conducted
 
 ---
 
@@ -80,13 +70,17 @@ Consensus on what code review is meant to accomplish
 
 # Practices
 
-A common set of actions performed by code authors and reviewers as part of a review.
+A common set of actions performed by code authors and reviewers as part of a review
 
-<!--- These are the easy parts, and the bulk of the talk -->
+<!---
+Practices encode the attitudes, goals, and values.
+-->
 
 ---
 
-# Agenda: Examine how a code review culture can be fostered by...
+# Agenda:
+
+Examine how a code review culture can be fostered by...
 
 * Organizations
 * Reviewers
@@ -96,13 +90,16 @@ A common set of actions performed by code authors and reviewers as part of a rev
 
 # Organizations
 
+<!---
+
+-->
+
 ---
 
-# Communicate about code review
+# Be intentional about your culture
 
 <!---
-TODO: Flesh this out a bit. Really we want to communicate about the attitudes and values part
-
+- Publicize the attitudes, goals, values, and practices
 - Communicate about the pedagogical aspects
 - Get buy in from leadership
 -->
@@ -113,9 +110,9 @@ TODO: Flesh this out a bit. Really we want to communicate about the attitudes an
 
 <!---
 - Communities should be intentional (?)
+- Language experts should be able to provide advice and feedback about whether a solution is idiomatic both to the language as a whole, and to the best practices of the organization in the use of that language
 - Domain experts as well as language experts
 - Domain experts should be able to provide advice and feedback about the correctness of a solution in a particular problem domain
-- Language experts should be able to provide advice and feedback about whether a solution is idiomatic both to the language as a whole, and to the best practices of the organization in the use of that language
 - Have a means of becoming a "certified" expert as part of IC career growth
 -->
 
@@ -137,20 +134,36 @@ TODO: Flesh this out a bit. Really we want to communicate about the attitudes an
 # Make the reviewer's life easier
 
 <!---
-- TODO: This might want to be two separate slides, with "make the reviewers life easier" as a theme
+- Recognize that the reviewer probably doesn't have the full context of the problem when reviewing
+- Key here is communicating with the reviewer. Context is everything
 - TODO: This can be expanded into a few slides.
 - Communication slides:
-- Key here is communicating with the reviewer. Context is everything
 - Communicate the context for the change in the PR message (TODO: example of bad and good PR message)
 - Highlight areas where design choices were made and show that you've thought about that choice
-
 -->
+
+---
+# Make the reviewer's life easier
+### *by communicating context*
+
+---
+
+[TODO]: Insert image of blank PR message here
+
+---
+
+[TODO]: Insert image of good PR message
+
+---
+
+[TODO]: Insert image of commenting where design choices were made
 
 ---
 
 # Make the PR the right size
 
 <!---
+TODO: This should be a few different slides
 - Work in "vertical slices"
 -->
 
@@ -178,7 +191,7 @@ TODO: Flesh this out a bit. Really we want to communicate about the attitudes an
 
 ---
 
-# Be Respectful
+# Be Thorough and Be Respectful
 
 <!---
 - Assume that people can do their jobs
@@ -205,13 +218,13 @@ TODO: Flesh this out a bit. Really we want to communicate about the attitudes an
 * Give justification for critique that might not have an obvious underlying reason <!--- values -->
 * Be straightforward <!--- Avoid "weasel words" -->
 
+<!---
+TODO: Break question trick into its own slide
+-->
+
 ---
 
 # Be as thorough as the PR needs
-
-<!---
-
--->
 
 ---
 
@@ -290,6 +303,10 @@ Trick: Read the code out loud. If you find yourself saying "why?" maybe somethin
 * Are the names of things idiomatic to the language? <!--- most linters should catch this -->
 * Do names encapsulate the problem domain? <!--- name after what it does, not what it is -->
 
+---
+
+[TODO]: Slide with bad variable name "ipArray" maybe?
+
 <!---
 TODO: Break those points out into individual slides with examples
 -->
@@ -317,3 +334,8 @@ TODO: Break those points out into individual slides with examples
 * Organizations: be intentional about your code review culture
 * Authors: make your reviewers lives' easier
 * Reviewers: be thorough and engage with the pedagogical aspects of code review
+
+---
+
+# Thank you
+
