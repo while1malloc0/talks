@@ -143,38 +143,52 @@ Examine how a code review culture can be fostered by...
 -->
 
 ---
-# Make the reviewer's life easier
-### *by communicating context*
+## Make the reviewer's life easier
+#### *by communicating context*
 
 ---
 
-[TODO]: Insert image of blank PR message here
+![](/images/images/no-changelog.png)
 
 ---
 
-[TODO]: Insert image of good PR message
+![](/images/images/with-changelog.png)
 
 ---
 
-[TODO]: Insert image of commenting where design choices were made
+![](/images/images/context-comment.png)
+
+---
+## Make the reviewer's life easier
+#### *by making the PR the right size*
 
 ---
 
-# Make the PR the right size
-
-<!---
-TODO: This should be a few different slides
-- Work in "vertical slices"
--->
+## Make the PR the right size
+#### *by working in vertical slices*
 
 ---
 
-# Automate the nits
+## Vertical slices...
+#### Ship a complete, end-to-end implementation
+
+---
+
+## Vertical slices...
+#### Introduce no new code that is not consumed in the same PR
+
+---
+
+## Make the reviewer's life easier
+#### *by automating the nits*
 
 <!---
 - Tests, linters, etc. should be run to keep nits to a minimum
 -->
 
+---
+## Automate the nits
+#### *using linters, tests, etc*
 ---
 
 # Know when to take if offline
@@ -191,7 +205,7 @@ TODO: This should be a few different slides
 
 ---
 
-# Be Thorough and Be Respectful
+## Be Thorough and Respectful
 
 <!---
 - Assume that people can do their jobs
@@ -199,8 +213,8 @@ TODO: This should be a few different slides
 -->
 
 ---
-
-# Know when to take it offline
+## Be Thorough and Respectful
+#### *by knowing when to take it offline*
 
 <!---
 - If the solution is obviously wrong or would lead you to leave a bunch of comments, set up a pairing session, make a list of revisions to make to the code, and use that time to teach the author
@@ -208,19 +222,29 @@ TODO: This should be a few different slides
 
 ---
 
-# Know when you're not the best person to give feedback
+## Be Thorough and Respectful
+#### *by knowing when you're not the best person to give feedback*
 
 ---
 
-# Delivering Feedback
-
-* Assume that the author is smart and knows how to do their job. <!--- questions trick -->
+## Delivering Feedback
 * Give justification for critique that might not have an obvious underlying reason <!--- values -->
 * Be straightforward <!--- Avoid "weasel words" -->
 
 <!---
 TODO: Break question trick into its own slide
 -->
+---
+## Delivering Feedback
+
+Assume that the author is smart and knows how to do their job.
+---
+
+![](/images/images/comment-no-question.png)
+
+---
+
+![](/images/images/comment-with-question.png)
 
 ---
 
@@ -305,11 +329,7 @@ Trick: Read the code out loud. If you find yourself saying "why?" maybe somethin
 
 ---
 
-[TODO]: Slide with bad variable name "ipArray" maybe?
-
-<!---
-TODO: Break those points out into individual slides with examples
--->
+![](/images/images/bad-variable-name.png)
 
 ---
 
@@ -332,7 +352,7 @@ TODO: Break those points out into individual slides with examples
 # Recap
 
 * Organizations: be intentional about your code review culture
-* Authors: make your reviewers lives' easier
+* Authors: make your reviewers' lives easier
 * Reviewers: be thorough and engage with the pedagogical aspects of code review
 
 ---
