@@ -1,9 +1,7 @@
 # Creating a Code Review Culture
 
-<!---
-- Introduce yourself and say title of talk
-- Lead into the uncontroversial statement about code review
--->
+Note:
+Lead into "Code Review is Useful"
 
 ---
 
@@ -17,9 +15,8 @@
 * A place to pass on best practices of an organization
 * An easy way for developing engineers to provide technical leadership
 
-<!---
-TODO: Break this up into a few slides
-TODO: Figure out the transition here. Maybe something about how we maximize the benefits? -->
+Note:
+Lead into code review culture is useful
 
 ---
 
@@ -37,8 +34,6 @@ TODO: Figure out the transition here. Maybe something about how we maximize the 
 
 The set of shared **attitudes**, **values**, **goals**, and **practices** that characterize **an engineering organization's approach to conducting code review.**
 
-<!--- lead in: let's break that down a little bit -->
-
 ---
 
 # Attitudes
@@ -51,12 +46,8 @@ A shared way of thinking about code review, its importance, and how it should be
 
 A shared understanding of the relative importance of attributes in an implementation
 
-<!---
-TODO: Maybe refine this?
-
-- Sometimes best stated as "Given situation x, we use y because z"
-
--->
+Note:
+Refine this
 
 ---
 
@@ -64,17 +55,14 @@ TODO: Maybe refine this?
 
 Consensus on what code review is meant to accomplish
 
-<!--- Important point: disagreements on the goal of code review can lead to issues with too many comments -->
-
 ---
 
 # Practices
 
 A common set of actions performed by code authors and reviewers as part of a review
 
-<!---
-Practices encode the attitudes, goals, and values.
--->
+Note:
+Practices can encode attitudes, goals, and values
 
 ---
 
@@ -90,40 +78,33 @@ Examine how a code review culture can be fostered by...
 
 # Organizations
 
-<!---
-
--->
-
 ---
 
 # Be intentional about your culture
 
-<!---
-- Publicize the attitudes, goals, values, and practices
-- Communicate about the pedagogical aspects
-- Get buy in from leadership
--->
-
 ---
+## Be intentional about your culture
+#### *By communicating the culture*
 
-# Establish a community of experts
+Note:
+Publish your values, goals, and expected attitues
+---
+## Be intentional about your culture
+#### *By establishing a community of experts*
 
-<!---
-- Communities should be intentional (?)
+Note:
 - Language experts should be able to provide advice and feedback about whether a solution is idiomatic both to the language as a whole, and to the best practices of the organization in the use of that language
 - Domain experts as well as language experts
 - Domain experts should be able to provide advice and feedback about the correctness of a solution in a particular problem domain
 - Have a means of becoming a "certified" expert as part of IC career growth
--->
 
 ---
+## Be intentional about your culture
+#### *by training code reviewers*
 
-# Train code reviewers
-
-<!---
+Note:
 - Talk about the fact that code review is a skill that needs to be trained and honed like any other
 - Lead into code authors
--->
 
 ---
 
@@ -133,18 +114,16 @@ Examine how a code review culture can be fostered by...
 
 # Make the reviewer's life easier
 
-<!---
-- Recognize that the reviewer probably doesn't have the full context of the problem when reviewing
-- Key here is communicating with the reviewer. Context is everything
-- TODO: This can be expanded into a few slides.
-- Communication slides:
-- Communicate the context for the change in the PR message (TODO: example of bad and good PR message)
-- Highlight areas where design choices were made and show that you've thought about that choice
--->
+Note:
+- Lead into communicating context
 
 ---
 ## Make the reviewer's life easier
 #### *by communicating context*
+
+Note:
+- Recognize that the reviewer probably doesn't have the full context of the problem when reviewing
+- Lead into images of changelog with no comment
 
 ---
 
@@ -154,6 +133,9 @@ Examine how a code review culture can be fostered by...
 
 ![](/images/images/with-changelog.png)
 
+Note:
+- Lead into communicating design decisions
+
 ---
 
 ![](/images/images/context-comment.png)
@@ -162,6 +144,9 @@ Examine how a code review culture can be fostered by...
 ## Make the reviewer's life easier
 #### *by making the PR the right size*
 
+Note:
+- This is tricky
+
 ---
 
 ## Make the PR the right size
@@ -169,22 +154,18 @@ Examine how a code review culture can be fostered by...
 
 ---
 
-## Vertical slices...
+## Vertical slices
 #### Ship a complete, end-to-end implementation
 
 ---
 
-## Vertical slices...
+## Vertical slices
 #### Introduce no new code that is not consumed in the same PR
 
 ---
 
 ## Make the reviewer's life easier
 #### *by automating the nits*
-
-<!---
-- Tests, linters, etc. should be run to keep nits to a minimum
--->
 
 ---
 ## Automate the nits
@@ -193,11 +174,10 @@ Examine how a code review culture can be fostered by...
 
 # Know when to take if offline
 
-<!---
+Note:
 - If the reviewer leaves a ton of commentary, ask them to pair on addressing comments and making improvements
 - If the reviewer seems antagonistic, address it offline.
 - Two types here: misunderstanding and toxicity
--->
 
 ---
 
@@ -207,18 +187,17 @@ Examine how a code review culture can be fostered by...
 
 ## Be Thorough and Respectful
 
-<!---
+Note:
 - Assume that people can do their jobs
 - Understand that code review is a pedagogical practice
--->
 
 ---
 ## Be Thorough and Respectful
 #### *by knowing when to take it offline*
 
-<!---
+Note:
 - If the solution is obviously wrong or would lead you to leave a bunch of comments, set up a pairing session, make a list of revisions to make to the code, and use that time to teach the author
--->
+
 
 ---
 
@@ -226,18 +205,24 @@ Examine how a code review culture can be fostered by...
 #### *by knowing when you're not the best person to give feedback*
 
 ---
+## Be Thorough and Respectful
+#### *by including justification for critque*
 
-## Delivering Feedback
-* Give justification for critique that might not have an obvious underlying reason <!--- values -->
-* Be straightforward <!--- Avoid "weasel words" -->
-
-<!---
-TODO: Break question trick into its own slide
--->
 ---
-## Delivering Feedback
 
-Assume that the author is smart and knows how to do their job.
+![](/images/images/comment-no-justification.png)
+
+---
+
+![](/images/images/comment-with-justification.png)
+
+---
+## Be Thorough and Respectful
+#### *by assuming the author knows how to do their job*
+
+Note:
+- Lead into "question trick"
+
 ---
 
 ![](/images/images/comment-no-question.png)
@@ -247,8 +232,11 @@ Assume that the author is smart and knows how to do their job.
 ![](/images/images/comment-with-question.png)
 
 ---
+## Be Thorough and Respectful
+#### *by being as thorough as the PR needs*
 
-# Be as thorough as the PR needs
+Note:
+- Lead into reviewing in passes
 
 ---
 
@@ -256,9 +244,15 @@ Assume that the author is smart and knows how to do their job.
 
 ---
 
-# Passes
+# Reviewing in passes
 
 Each pass is a theme, and some questions to help focus on that theme
+
+---
+
+# Reviewing in passes
+
+Make your own. Make a checklist.
 
 ---
 
@@ -272,7 +266,10 @@ If there are red flags on any of these, resolve before adding more commentary.
 
 * What is the general shape of the PR? Is it a completely new feature? Is it a refactor? Is it a one-line change?
 
-* Is the PR the right size? <!--- don't be nitpicky about this -->
+* Is the PR the right size?
+
+Note:
+- Don't be too picky about the size
 
 ---
 
@@ -281,9 +278,9 @@ If there are red flags on any of these, resolve before adding more commentary.
 * What is this PR trying to accomplish?
 * Why is this PR trying to accomplish that?
 * Does this PR actually accomplish what it says it will?
-<!---
+
+Note:
 Hopefully most of this is provided by PR comments
--->
 
 ---
 
@@ -305,10 +302,9 @@ Do these for more substantial PRs. Pick the ones relevant to the change.
 
 * Is the change reasonably understandable by other humans with little/no prior experience of the code?
 
-<!---
-TODO: Add example slide
-Trick: Read the code out loud. If you find yourself saying "why?" maybe something isn't readable
--->
+Note:
+- TODO: Add example slide
+- Trick: Read the code out loud. If you find yourself saying "why?" maybe something isn't readable
 
 ---
 
@@ -324,8 +320,12 @@ Trick: Read the code out loud. If you find yourself saying "why?" maybe somethin
 # Naming
 
 * Are variable, function, method names communicative of what they do?
-* Are the names of things idiomatic to the language? <!--- most linters should catch this -->
-* Do names encapsulate the problem domain? <!--- name after what it does, not what it is -->
+* Are the names of things idiomatic to the language?
+* Do names encapsulate the problem domain?
+
+Note:
+- Subtlety to first point: do they communicate EVERYTHING that they do?
+- Don't include mechanical components in names
 
 ---
 
