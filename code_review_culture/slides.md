@@ -12,8 +12,8 @@ Lead into "Code Review is Useful"
 # Code Review provides
 
 * A means of ensuring that code quality remains high
-* A place to pass on best practices of an organization
-* An easy way for developing engineers to provide technical leadership
+* A place to pass on technical best practices
+* An opportunity to teach new technical concepts with practical application
 
 Note:
 Lead into code review culture is useful
@@ -38,22 +38,19 @@ The set of shared **attitudes**, **values**, **goals**, and **practices** that c
 
 # Attitudes
 
-A shared way of thinking about code review, its importance, and how it should be conducted
+A shared way of thinking about code review's importance, and how it should be conducted
 
 ---
 
 # Values
 
-A shared understanding of the relative importance of attributes in an implementation
-
-Note:
-Refine this
+A shared understanding of the relative importance of attributes in an implementation, and importance of different properties of a code review
 
 ---
 
 # Goals
 
-Consensus on what code review is meant to accomplish
+A shared agreement on the purpose of code review
 
 ---
 
@@ -68,7 +65,7 @@ Practices can encode attitudes, goals, and values
 
 # Agenda:
 
-Examine how a code review culture can be fostered by...
+Examine the practices that contribute to a strong code review culture from the perspective of...
 
 * Organizations
 * Reviewers
@@ -127,18 +124,18 @@ Note:
 
 ---
 
-![](/images/images/no-changelog.png)
+![](/images/no-changelog.png)
 
 ---
 
-![](/images/images/with-changelog.png)
+![](/images/with-changelog.png)
 
 Note:
 - Lead into communicating design decisions
 
 ---
 
-![](/images/images/context-comment.png)
+![](/images/context-comment.png)
 
 ---
 ## Make the reviewer's life easier
@@ -210,11 +207,11 @@ Note:
 
 ---
 
-![](/images/images/comment-no-justification.png)
+![](/images/comment-no-justification.png)
 
 ---
 
-![](/images/images/comment-with-justification.png)
+![](/images/comment-with-justification.png)
 
 ---
 ## Be Thorough and Respectful
@@ -225,11 +222,11 @@ Note:
 
 ---
 
-![](/images/images/comment-no-question.png)
+![](/images/comment-no-question.png)
 
 ---
 
-![](/images/images/comment-with-question.png)
+![](/images/comment-with-question.png)
 
 ---
 ## Be Thorough and Respectful
@@ -329,7 +326,7 @@ Note:
 
 ---
 
-![](/images/images/bad-variable-name.png)
+![](/images/bad-variable-name.png)
 
 ---
 
