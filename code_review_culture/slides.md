@@ -10,12 +10,20 @@ Lead into "Code Review is Useful"
 ---
 
 # Code Review provides
+#### Code quality improvements
 
-* A means of ensuring that code quality remains high
-* A place to pass on technical best practices
-* An opportunity to teach new technical concepts with practical application
+---
+
+# Code Review provides
+#### Best practice communication
+
+---
+
+# Code Review provides
+#### An opportunity to teach
 
 Note:
+Teaching this way has immediate practical application
 Lead into code review culture is useful
 
 ---
@@ -26,7 +34,7 @@ Lead into code review culture is useful
 
 # Culture
 
-"the set of shared **attitudes**, **values**, **goals**, and **practices** that characterizes an institution or organization" - Miriam Webster (.com)
+"the set of shared **attitudes**, **values**, **goals**, and **practices** that characterizes an institution or organization" - Mirriam Webster (.com)
 
 ---
 
@@ -38,19 +46,19 @@ The set of shared **attitudes**, **values**, **goals**, and **practices** that c
 
 # Attitudes
 
-A shared way of thinking about code review's importance, and how it should be conducted
+A *shared way of thinking* about code review's importance, and how it should be conducted
 
 ---
 
 # Values
 
-A shared understanding of the relative importance of attributes in an implementation, and importance of different properties of a code review
+A *shared understanding* of the *relative importance* of attributes in an implementation, and importance of different properties of a code review
 
 ---
 
 # Goals
 
-A shared agreement on the purpose of code review
+A *shared agreement* on the *purpose of code review*
 
 ---
 
@@ -60,6 +68,7 @@ A common set of actions performed by code authors and reviewers as part of a rev
 
 Note:
 Practices can encode attitudes, goals, and values
+Sneakily influence culture
 
 ---
 
@@ -75,19 +84,21 @@ Examine the practices that contribute to a strong code review culture from the p
 
 # Organizations
 
+Note:
+TODO: Figure out better description for "middle-out" change that doesn't use the words "Cross functional working group"
 ---
 
 # Be intentional about your culture
 
 ---
 ## Be intentional about your culture
-#### *By communicating the culture*
+#### *by communicating the culture*
 
 Note:
 Publish your values, goals, and expected attitues
 ---
 ## Be intentional about your culture
-#### *By establishing a community of experts*
+#### *by establishing a community of experts*
 
 Note:
 - Language experts should be able to provide advice and feedback about whether a solution is idiomatic both to the language as a whole, and to the best practices of the organization in the use of that language
@@ -95,6 +106,12 @@ Note:
 - Domain experts should be able to provide advice and feedback about the correctness of a solution in a particular problem domain
 - Have a means of becoming a "certified" expert as part of IC career growth
 
+---
+## Be intentional about your culture
+#### *by developing new experts*
+
+Note:
+Experts become gatekeepers if there is no means of making more experts
 ---
 ## Be intentional about your culture
 #### *by training code reviewers*
@@ -142,7 +159,9 @@ Note:
 #### *by making the PR the right size*
 
 Note:
-- This is tricky
+- Lots of wrong size PRs, very few right size
+- Obvious thing to get out the way: large PRs are normally bad
+- Exception: Large deletion PRs
 
 ---
 
@@ -152,26 +171,34 @@ Note:
 ---
 
 ## Vertical slices
-#### Ship a complete, end-to-end implementation
+#### *ship end-to-end functionality*
 
 ---
 
 ## Vertical slices
-#### Introduce no new code that is not consumed in the same PR
+#### *introduce no new code that is not consumed in the same PR*
+
+---
+
+## Vertical slices
+#### *force paring down to an MVP*
 
 ---
 
 ## Make the reviewer's life easier
 #### *by automating the nits*
 
----
-## Automate the nits
-#### *using linters, tests, etc*
+Note:
+- Explain what nits are
+- Automate them using linters, tests, etc
+
 ---
 
-# Know when to take if offline
+## Make the reviewer's life easier
+#### *by knowing when to take it offline*
 
 Note:
+- Explain "take it offline"
 - If the reviewer leaves a ton of commentary, ask them to pair on addressing comments and making improvements
 - If the reviewer seems antagonistic, address it offline.
 - Two types here: misunderstanding and toxicity
@@ -203,7 +230,7 @@ Note:
 
 ---
 ## Be Thorough and Respectful
-#### *by including justification for critque*
+#### *by including justification for critique*
 
 ---
 
@@ -241,25 +268,25 @@ Note:
 
 ---
 
-# Reviewing in passes
+## Reviewing in passes
 
-Each pass is a theme, and some questions to help focus on that theme
-
----
-
-# Reviewing in passes
-
-Make your own. Make a checklist.
+#### Each pass is a theme, and some questions to help focus on that theme
 
 ---
 
-# Passes to complete every time
+## Reviewing in passes
 
-If there are red flags on any of these, resolve before adding more commentary.
+#### Make your own. Make a checklist.
 
 ---
 
-# Sizing up
+## Passes to complete every time
+
+#### If there are red flags on any of these, resolve before adding more commentary.
+
+---
+
+## Sizing up
 
 * What is the general shape of the PR? Is it a completely new feature? Is it a refactor? Is it a one-line change?
 
@@ -270,7 +297,7 @@ Note:
 
 ---
 
-# Context
+## Context
 
 * What is this PR trying to accomplish?
 * Why is this PR trying to accomplish that?
@@ -281,7 +308,7 @@ Hopefully most of this is provided by PR comments
 
 ---
 
-# Relevance
+## Relevance
 
 * Is the change made in this PR necessary?
 * Does this PR duplicate existing functionality?
@@ -289,13 +316,13 @@ Hopefully most of this is provided by PR comments
 
 ---
 
-# Passes for more in-depth review
+## Passes for more in-depth review
 
-Do these for more substantial PRs. Pick the ones relevant to the change.
+#### Do these for more substantial PRs. Pick the ones relevant to the change.
 
 ---
 
-# Readability
+## Readability
 
 * Is the change reasonably understandable by other humans with little/no prior experience of the code?
 
@@ -305,7 +332,7 @@ Note:
 
 ---
 
-# Production readiness
+## Production readiness
 
 * How do we know when this breaks?
 * Is there new documentation required by this change?
@@ -314,11 +341,11 @@ Note:
 
 ---
 
-# Naming
+## Naming
 
-* Are variable, function, method names communicative of what they do?
+* Do names communicate what things do?
 * Are the names of things idiomatic to the language?
-* Do names encapsulate the problem domain?
+* Do names leak implementation details?
 
 Note:
 - Subtlety to first point: do they communicate EVERYTHING that they do?
@@ -330,7 +357,7 @@ Note:
 
 ---
 
-# Gotchas
+## Gotchas
 
 * What are the ways in which the added or changed code can break?
 * Common gotchas: transposition errors, off by one errors, memory leaks, null dereferences
@@ -338,7 +365,7 @@ Note:
 
 ---
 
-# Language specific
+## Language specific
 
 * Is the code idiomatic?
 * Are new patterns introduced?
@@ -346,11 +373,14 @@ Note:
 
 ---
 
-# Recap
+## Recap
 
 * Organizations: be intentional about your code review culture
 * Authors: make your reviewers' lives easier
 * Reviewers: be thorough and engage with the pedagogical aspects of code review
+
+Note:
+Ending point: being able to teach is an opportunity. Don't waste it.
 
 ---
 
