@@ -10,17 +10,17 @@ Lead into "Code Review is Useful"
 ---
 
 # Code Review provides
-#### Code quality improvements
+#### code quality improvements
 
 ---
 
 # Code Review provides
-#### Best practice communication
+#### a communication platform
 
 ---
 
 # Code Review provides
-#### An opportunity to teach
+#### an opportunity to teach
 
 Note:
 Teaching this way has immediate practical application
@@ -46,25 +46,25 @@ The set of shared **attitudes**, **values**, **goals**, and **practices** that c
 
 # Attitudes
 
-A *shared way of thinking* about code review's importance, and how it should be conducted
+A shared **way of thinking** about code review
 
 ---
 
 # Values
 
-A *shared understanding* of the *relative importance* of attributes in an implementation, and importance of different properties of a code review
+A shared **ranking** of what's important in code
 
 ---
 
 # Goals
 
-A *shared agreement* on the *purpose of code review*
+A shared **agreement** on the **purpose of code review**
 
 ---
 
 # Practices
 
-A common set of actions performed by code authors and reviewers as part of a review
+A shared *set of actions* performed as part of code review
 
 Note:
 Practices can encode attitudes, goals, and values
@@ -173,6 +173,9 @@ Note:
 ## Vertical slices
 #### *ship end-to-end functionality*
 
+Note:
+Example: features in a web app
+
 ---
 
 ## Vertical slices
@@ -209,14 +212,14 @@ Note:
 
 ---
 
-## Be Thorough and Respectful
+## Communicate Mutual Respect
 
 Note:
 - Assume that people can do their jobs
 - Understand that code review is a pedagogical practice
 
 ---
-## Be Thorough and Respectful
+## Communicate Mutual Respect
 #### *by knowing when to take it offline*
 
 Note:
@@ -225,11 +228,11 @@ Note:
 
 ---
 
-## Be Thorough and Respectful
+## Communicate Mutual Respect
 #### *by knowing when you're not the best person to give feedback*
 
 ---
-## Be Thorough and Respectful
+## Communicate Mutual Respect
 #### *by including justification for critique*
 
 ---
@@ -241,8 +244,8 @@ Note:
 ![](/images/comment-with-justification.png)
 
 ---
-## Be Thorough and Respectful
-#### *by assuming the author knows how to do their job*
+## Communicate Mutual Respect
+#### *by showing that you know that the author can do their job*
 
 Note:
 - Lead into "question trick"
@@ -256,7 +259,7 @@ Note:
 ![](/images/comment-with-question.png)
 
 ---
-## Be Thorough and Respectful
+## Communicate Mutual Respect
 #### *by being as thorough as the PR needs*
 
 Note:
@@ -285,34 +288,43 @@ Note:
 #### If there are red flags on any of these, resolve before adding more commentary.
 
 ---
-
 ## Sizing up
 
-* What is the general shape of the PR? Is it a completely new feature? Is it a refactor? Is it a one-line change?
+#### What is the general shape of the PR? Is it a completely new feature? Is it a refactor? Is it a one-line change?
 
-* Is the PR the right size?
+---
+## Sizing up
+
+#### Is the PR the right size?
 
 Note:
 - Don't be too picky about the size
-
 ---
-
 ## Context
 
-* What is this PR trying to accomplish?
-* Why is this PR trying to accomplish that?
-* Does this PR actually accomplish what it says it will?
+#### What is this PR trying to accomplish?
+---
+## Context
+#### Why is this PR trying to accomplish that?
+---
+## Context
+#### Does this PR actually accomplish what it says it will?
 
 Note:
 Hopefully most of this is provided by PR comments
-
 ---
 
 ## Relevance
 
-* Is the change made in this PR necessary?
-* Does this PR duplicate existing functionality?
-* Are there others that should be aware of this PR?
+#### Is the change made in this PR necessary?
+---
+
+## Relevance
+#### Does this PR duplicate existing functionality?
+---
+
+## Relevance
+#### Are there others that should be aware of this PR?
 
 ---
 
@@ -324,8 +336,7 @@ Hopefully most of this is provided by PR comments
 
 ## Readability
 
-* Is the change reasonably understandable by other humans with little/no prior experience of the code?
-
+#### Is the change reasonably understandable by other humans with little/no prior experience of the code?
 Note:
 - TODO: Add example slide
 - Trick: Read the code out loud. If you find yourself saying "why?" maybe something isn't readable
@@ -334,54 +345,79 @@ Note:
 
 ## Production readiness
 
-* How do we know when this breaks?
-* Is there new documentation required by this change?
-* Are there tests that prevent regression?
-* Is this change secure?
-
+#### How do we know when this breaks?
 ---
 
+## Production readiness
+#### Is there new documentation required by this change?
+---
+
+## Production readiness
+#### Are there tests that prevent regression?
+---
+
+## Production readiness
+#### Is this change secure?
+
+---
 ## Naming
 
-* Do names communicate what things do?
-* Are the names of things idiomatic to the language?
-* Do names leak implementation details?
-
+#### Do names communicate what things do?
 Note:
-- Subtlety to first point: do they communicate EVERYTHING that they do?
-- Don't include mechanical components in names
+- do they communicate EVERYTHING that they do?
+---
+## Naming
+#### Are the names of things idiomatic to the language?
+---
+## Naming
+#### Do names leak implementation details?
 
+Note: Don't include mechanical components in names
 ---
 
 ![](/images/bad-variable-name.png)
 
 ---
-
 ## Gotchas
 
-* What are the ways in which the added or changed code can break?
-* Common gotchas: transposition errors, off by one errors, memory leaks, null dereferences
-* Is spelling correct and consistent?
-
+#### What are the ways in which the added or changed code can break?
 ---
 
+## Gotchas
+#### Is this code subject to any common programming gotchas?
+
+Note:
+Common gotchas: transposition errors, off by one errors, memory leaks, null dereferences
+---
+## Gotchas
+#### Is spelling correct and consistent?
+---
 ## Language specific
 
-* Is the code idiomatic?
-* Are new patterns introduced?
-* Does the code fall into common pitfalls for the language?
+#### Is the code idiomatic?
+---
+## Language specific
 
+#### Are new patterns introduced?
+---
+## Language specific
+
+#### Does the code fall into common pitfalls for the language?
+---
+## Recap
+
+#### Organizations: be intentional about your code review culture
 ---
 
 ## Recap
+#### Authors: make your reviewers' lives easier
+---
 
-* Organizations: be intentional about your code review culture
-* Authors: make your reviewers' lives easier
-* Reviewers: be thorough and engage with the pedagogical aspects of code review
+## Recap
+#### Reviewers: be thorough and engage with the pedagogical aspects of code review
 
 Note:
-Ending point: being able to teach is an opportunity. Don't waste it.
-
+being able to teach is an opportunity. Don't waste it.
 ---
 
 # Thank you
