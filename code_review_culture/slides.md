@@ -64,7 +64,7 @@ A shared **agreement** on the **purpose of code review**
 
 # Practices
 
-A shared *set of actions* performed as part of code review
+A shared **set of actions** performed as part of code review
 
 Note:
 Practices can encode attitudes, goals, and values
@@ -77,8 +77,8 @@ Sneakily influence culture
 Examine the practices that contribute to a strong code review culture from the perspective of...
 
 * Organizations
-* Reviewers
 * Authors
+* Reviewers
 
 ---
 
@@ -391,6 +391,9 @@ Common gotchas: transposition errors, off by one errors, memory leaks, null dere
 ---
 ## Gotchas
 #### Is spelling correct and consistent?
+
+Note:
+Amazon S3 Java library
 ---
 ## Language specific
 
