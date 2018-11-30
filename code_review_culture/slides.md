@@ -34,7 +34,7 @@ Lead into code review culture is useful
 
 # Culture
 
-"the set of shared **attitudes**, **values**, **goals**, and **practices** that characterizes an institution or organization" - Mirriam Webster (.com)
+"the set of shared **attitudes**, **values**, **goals**, and **practices** that characterizes an institution or organization" - Mirriam Webster
 
 ---
 
@@ -85,7 +85,7 @@ Examine the practices that contribute to a strong code review culture from the p
 # Organizations
 
 Note:
-TODO: Figure out better description for "middle-out" change that doesn't use the words "Cross functional working group"
+Mark: 3m
 ---
 
 # Be intentional about your culture
@@ -124,6 +124,8 @@ Note:
 
 # Code Authors
 
+Note:
+mark 7m
 ---
 
 # Make the reviewer's life easier
@@ -210,6 +212,8 @@ Note:
 
 # Code Reviewers
 
+Note:
+mark 17m
 ---
 
 ## Communicate Mutual Respect
@@ -269,6 +273,8 @@ Note:
 
 # Reviewing in passes
 
+Note:
+mark 23m
 ---
 
 ## Reviewing in passes
@@ -307,12 +313,6 @@ Note:
 ## Context
 #### Why is this PR trying to accomplish that?
 ---
-## Context
-#### Does this PR actually accomplish what it says it will?
-
-Note:
-Hopefully most of this is provided by PR comments
----
 
 ## Relevance
 
@@ -338,8 +338,8 @@ Hopefully most of this is provided by PR comments
 
 #### Is the change reasonably understandable by other humans with little/no prior experience of the code?
 Note:
-- TODO: Add example slide
 - Trick: Read the code out loud. If you find yourself saying "why?" maybe something isn't readable
+- Esoteric language features
 
 ---
 
@@ -397,7 +397,7 @@ Amazon S3 Java library
 ---
 ## Language specific
 
-#### Is the code idiomatic?
+#### Is the code idiomatic to the language?
 ---
 ## Language specific
 
